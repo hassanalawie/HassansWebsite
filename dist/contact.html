@@ -50,7 +50,7 @@
           <span class="primary-color">Contact </span> Me
         </h1>
         <p class="m-heading">Let's Connect!</p>
-        <form>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -72,6 +72,7 @@
           <div class="form-group">
             <label for="message">Message</label>
             <textarea type="message" name="message" id="message "></textarea>
+            <div data-netlify-recaptcha="true"></div>
           </div>
           <button type="submit" class="btn">Submit</button>
         </form>
