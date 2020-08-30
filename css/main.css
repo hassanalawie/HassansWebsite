@@ -366,6 +366,7 @@ py-3 {
   position: relative;
   background: #bbe6ff;
   overflow: hidden;
+  margin: 15px;
 }
 .item::after {
   content: "";

@@ -64,6 +64,6 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-$("#button").click(function() {
+$("#button").click(function () {
   $(".transform").toggleClass("transform-active");
 });
