@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hassan Alawie</title>
+    <style>
+      body {
+        background: #f4f4f4;
+        font-family: "Lato";
+      }
+      .lead {
+        font-size: 1.3rem;
+        margin: 14rem;
+      }
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+
+      a:hover {
+        background-color: #7c9bf1;
+      }
+      .btn-light {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        transition: all 0.5s;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #333;
+        background-color: #bbe6ff;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        2% {
+          opacity: 1;
+        }
+
+        45% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .fader-one {
+        font-size: 3.4rem;
+        position: absolute;
+        top: 10.5rem;
+        left: 10%;
+        opacity: 0;
+        color: #bbe6ff;
+        animation-name: fadeIn;
+        animation-delay: 1;
+        animation-duration: 120s;
+      }
+
+      .fader-two {
+        font-size: 3.4rem;
+        position: relative;
+        top: 10.5rem;
+        left: 10%;
+        opacity: 0;
+        color: #333;
+        animation-name: fadeIn;
+        animation-delay: 2;
+        animation-duration: 120s;
+      }
+      .buttonone {
+        margin: 20rem;
+      }
+      @media (max-width: 600px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .fader-one {
+          font-size: 2.5rem;
+          top: 3rem;
+          left: 10%;
+          opacity: 0;
+          color: #bbe6ff;
+          animation-name: fadeIn;
+          animation-delay: 1;
+          animation-duration: 120s;
+        }
+
+        .fader-two {
+          font-size: 2.5rem;
+          top: 3rem;
+          left: 10%;
+          opacity: 0;
+          color: #333;
+          animation-name: fadeIn;
+          animation-delay: 2;
+          animation-duration: 120s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header-home">
+      <h1 class="fader-one">
+        My name is Hassan Alawie <br />
+        I am an aspiring
+        <span
+          class="txt-type"
+          data-wait="500"
+          data-words='["Engineer", "Web Developer", "Innovator"]'
+        ></span>
+        <br /><br />
+        <a href="home.html" class="btn-light fader-two"
+          >Press this button to get to know me</a
+        >
+      </h1>
+    </div>
+
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>
